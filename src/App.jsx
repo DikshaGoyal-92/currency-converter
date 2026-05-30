@@ -48,7 +48,8 @@ function App() {
   const [result, setResult] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const API_KEY = "e8bb1ecc97994135ddfa8c3b";
+  
+  const API_KEY = import.meta.env.VITE_API_KEY;
 
   const convertCurrency = async () => {
     try {
